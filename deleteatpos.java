@@ -1,5 +1,3 @@
-import java.lang.classfile.TypeAnnotation.SupertypeTarget;
-
 public class deleteatpos 
 {
 
