@@ -15,7 +15,7 @@ public class Insertmanually
 
   }
 
-  public static void main(String[] args) 
+    public static void main(String[] args) 
   {
     Insertmanually im = new Insertmanually();
     im.head = new node(10);
@@ -25,7 +25,6 @@ public class Insertmanually
     im.head.next = second;
     second.next = third;
 
-    
     
   }
 }
