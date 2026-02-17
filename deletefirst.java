@@ -36,8 +36,17 @@ public class deletefirst
 
   public void deletefront()
   {
-    node cur= head.next;
-    head=cur;
+    if(head==null)
+    {
+      System.out.println("null");
+      return;
+    }
+    node temp=head;
+    head = head.next;
+    temp.next=null;
+    System.out.println(temp.data);
+
+
   }
 
   public void display()
@@ -61,7 +70,6 @@ public class deletefirst
     df.insertatend(30);
     df.insertatend(40);
     df.display();
-    df.deletefront();
     df.deletefront();
     df.display();
     
