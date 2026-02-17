@@ -1,4 +1,4 @@
-public class list
+public class List
 {
   private ListNode head;
 
@@ -6,13 +6,14 @@ public class list
   {
     private int data;
     private ListNode next;
+
+    public ListNode(int data)
+    {
+      this.data =  data;
+      this.next =  null;
+    }
+
   }
 
-  public ListNode(int data)
-  {
-    this.data =  data;
-    this.next =  null;
-  }
-  
-  
+    
 }
