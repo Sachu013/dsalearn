@@ -1,4 +1,4 @@
-public class display
+public class length
 {
   private node head;
 
@@ -15,20 +15,21 @@ public class display
 
   }
 
-  public void display()
+public void len()
+{
+  node cur = head;
+  int count=0;
+  while(cur!=null)
   {
-    node cur = head;
-    while(cur!=null)
-    {
-      System.out.print(cur.data +" -> ");
-      cur=cur.next;
-    }
-    System.out.println("null");
+    count++;
+    cur=cur.next;
   }
+  System.out.println(count);
+}
 
-  public static void main(String[] args) 
+    public static void main(String[] args) 
   {
-    Insertmanually im = new Insertmanually();
+    length im = new length();
     im.head = new node(10);
     node second = new node(20);
     node third = new node(30);
@@ -36,7 +37,8 @@ public class display
     im.head.next = second;
     second.next = third;
 
-    im.display();
+    im.len();
+
     
   }
 }
