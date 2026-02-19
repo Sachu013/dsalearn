@@ -40,6 +40,19 @@ public class stack
     length++;
   }
 
+  public int pop()
+  {
+    if(isempty())
+    {
+      System.out.println("ntng to pop");
+      return 0;
+    }
+    int val = top.data;
+    top=top.next;
+    length--;
+    return val;
+  }
+
   public void display()
   {
     node cur = top;
@@ -56,6 +69,7 @@ public class stack
   public static void main(String[] args) 
   {
     stack s = new stack();
+    s.pop();
     s.push(10);
     s.push(20);
     s.push(30);
@@ -64,6 +78,10 @@ public class stack
     s.push(104);
     s.push(1560);
     
+    s.display();
+    s.pop();
+    s.pop();
+    s.pop();
     s.display();
   }
 
