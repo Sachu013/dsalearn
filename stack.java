@@ -66,6 +66,18 @@ public class stack
     }
   }
 
+  public int peek()
+  {
+    if(isempty())
+    {
+      return 0;
+    }
+    else
+    {
+      return top.data;
+    }
+  }
+
   public static void main(String[] args) 
   {
     stack s = new stack();
