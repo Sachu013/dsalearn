@@ -19,7 +19,7 @@ public class reversestring
 
     String a =  new String(arr);
     System.out.println(a);
-
+sc.close();
   }
 
   
